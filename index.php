@@ -1,7 +1,5 @@
 <?php
-
     $hotels = [
-
         [
             'name' => 'Hotel Belvedere',
             'description' => 'Hotel Belvedere Descrizione',
@@ -40,6 +38,16 @@
 
     ];
 
+    for ($i = 0; $i < count($hotels); $i++) {
+        echo '<hr>';
+        echo '<div>Nome: '.$hotels[$i]['name'].'</div>';
+        echo '<div>Descrizione: '.$hotels[$i]['description'].'</div>';
+        echo '<div>Parcheggio: '.$hotels[$i]['parking'].'</div>';
+        echo '<div>Voto: '.$hotels[$i]['vote'].'</div>';
+        echo '<div>Distanza dal centro: '.$hotels[$i]['distance_to_center'].'</div>';
+        echo '<hr>';
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -55,6 +63,10 @@
             PHP Hotel
         </h1>
     </header>
+
+    <main>
+
+    </main>
     
 </body>
 </html>
